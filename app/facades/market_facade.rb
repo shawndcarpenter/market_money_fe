@@ -7,6 +7,6 @@ class MarketFacade
     service = MarketService.new
 
     market_data = service.get_market(@market_id)[:data]
-    @market = Market.new(market_data)
+    @market = DetailedMarket.new(market_data)
   end
 end
