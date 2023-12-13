@@ -1,6 +1,7 @@
 class MarketsController < ApplicationController
   def show
     @market = MarketFacade.new(params[:id]).market
+    @vendors = MarketVendorsFacade.new(params[:id]).vendors
   end
 
   def index
