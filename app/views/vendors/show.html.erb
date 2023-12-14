@@ -22,6 +22,6 @@
     <% @search_results.each do |error| %>
       <%= error.detail %>
     <% end %>
-<% else %>
+<% elsif @search_results == [] %>
   <p>No Markets found which meet these search criteria.</p>
 <% end %>

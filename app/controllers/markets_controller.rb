@@ -15,6 +15,9 @@ class MarketsController < ApplicationController
 
   def create 
     create_market_vendor(params[:market_id], params[:vendor_id])
+    redirect_to "/vendors/#{params[:vendor_id]}"
+    flash[:notice]="Vendor added to Market"
+    # yes I know this does not include a sad path
   end
 
   private
