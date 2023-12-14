@@ -1,7 +1,7 @@
 require "rails_helper"
 
 RSpec.describe "Market" do
-  describe "User Story 2" do
+  describe "User Story 2", :vcr do
     it "has the markets information" do
       visit "/markets/322458"
 

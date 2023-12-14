@@ -1,0 +1,56 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/api/v0/vendors/56162
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.12
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"e9fbb109873cf04b6760969d2042f5bf"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 64d236ec-b5e9-4ece-9fec-d98ba864d04a
+      X-Runtime:
+      - '0.015687'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.10, sql.active_record;dur=1.43, instantiation.active_record;dur=0.17,
+        process_action.action_controller;dur=3.70
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"56162","type":"vendor","attributes":{"name":"Colorful
+        Comforts","description":"Colorful and cozy clothing and accessories.","contact_name":"Farrah
+        Crist","contact_phone":"1-321-896-0792","credit_accepted":false}}}'
+  recorded_at: Thu, 14 Dec 2023 21:53:53 GMT
+recorded_with: VCR 6.2.0
