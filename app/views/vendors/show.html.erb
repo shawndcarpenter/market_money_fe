@@ -1,6 +1,27 @@
 <h1><%= @vendor.name %></h1>
 <h3>Contact Info:</h3>
 <h5>Name: <%= @vendor.contact_name %></h5>
-<h5>Phone: <%= @vendor.contact_phone %></h5><br>
-<h5>Credit Accepted?: <%= yes_or_no(@vendor.credit_accepted) %></h5><br>
+<h5>Phone: <%= @vendor.contact_phone %></h5>
+<h5>Credit Accepted?: <%= yes_or_no(@vendor.credit_accepted) %></h5>
 <h5>Description: <%= @vendor.description %></h5>
+
+<h3>Search for Markets to add this vendor:</h3>
+<%= form_with url: "/vendors/#{@vendor.id}", method: :get, local: :true do |f| %>
+  <%= f.text_field :city, placeholder: "city" %>
+  <%= f.text_field :state, placeholder: "state" %>
+  <%= f.text_field :name, placeholder: "name" %>
+  <%= f.submit "Search" %>
+<% end %>
+
+<% if @search_results && @search_results.first.respond_to?(:name) %>
+    <% @search_results.each do |market| %>
+      <p><%= link_to "#{market.name}", "/markets/#{market.id}" %></p>
+      <%= button_to "Add Market", "/markets/#{market.id}/vendors", params: {:market_id => market.id, :vendor_id => @vendor.id}, method: :post %>
+    <% end %>  
+<% elsif  @search_results && @search_results.first.respond_to?(:detail) %>
+    <% @search_results.each do |error| %>
+      <%= error.detail %>
+    <% end %>
+<% else %>
+  <p>No Markets found which meet these search criteria.</p>
+<% end %>

@@ -1,6 +1,6 @@
 <% @markets.each do |market| %>
   <div id="market-<%= market.id %>">
-    <%= market.name %>
+    <b><%= market.name %></b>
     <%= market.city %>
     <%= market.state %>
     <%= button_to "More Info", "/markets/#{market.id}", method: :get%>
