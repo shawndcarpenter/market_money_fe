@@ -1,0 +1,160 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/api/v0/vendors/56162
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.12
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"e9fbb109873cf04b6760969d2042f5bf"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - dd6b8a8c-80bb-490d-b593-63a58d9c9ae3
+      X-Runtime:
+      - '0.005444'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.05, sql.active_record;dur=0.45, instantiation.active_record;dur=0.02,
+        process_action.action_controller;dur=0.92
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"56162","type":"vendor","attributes":{"name":"Colorful
+        Comforts","description":"Colorful and cozy clothing and accessories.","contact_name":"Farrah
+        Crist","contact_phone":"1-321-896-0792","credit_accepted":false}}}'
+  recorded_at: Thu, 14 Dec 2023 21:54:30 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v0/vendors/56162
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.12
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"e9fbb109873cf04b6760969d2042f5bf"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - d2950b77-708e-4cd0-9994-101ea0930f72
+      X-Runtime:
+      - '0.004846'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.04, sql.active_record;dur=0.32, instantiation.active_record;dur=0.02,
+        process_action.action_controller;dur=0.68
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"56162","type":"vendor","attributes":{"name":"Colorful
+        Comforts","description":"Colorful and cozy clothing and accessories.","contact_name":"Farrah
+        Crist","contact_phone":"1-321-896-0792","credit_accepted":false}}}'
+  recorded_at: Thu, 14 Dec 2023 21:54:31 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v0/markets/search?city=&name=&state=Not%20a%20State
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.12
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"8fe32e407a1038ee38753b70e5374b3a"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 974362e9-78a7-4a50-8e84-e359c17dd4e7
+      X-Runtime:
+      - '0.018048'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.04, sql.active_record;dur=8.71, instantiation.active_record;dur=2.91,
+        process_action.action_controller;dur=13.97
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[]}'
+  recorded_at: Thu, 14 Dec 2023 21:54:31 GMT
+recorded_with: VCR 6.2.0

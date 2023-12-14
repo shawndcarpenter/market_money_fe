@@ -1,7 +1,7 @@
 require "rails_helper"
 
 RSpec.describe "Markets Index" do
-  describe "User Story 1" do
+  describe "User Story 1", :vcr do
     it "shows markets with name, city and state" do
       visit "/markets"
 

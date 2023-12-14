@@ -1,0 +1,171 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/api/v0/markets/322482
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.12
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"6c94864180995adf3a647cec5b4c295d"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 3e6a01a0-ce21-417f-acd1-47453e8b0116
+      X-Runtime:
+      - '0.005771'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.04, sql.active_record;dur=0.88, instantiation.active_record;dur=0.05,
+        process_action.action_controller;dur=1.60
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"322482","type":"market","attributes":{"name":"39 North
+        Marketplace","street":"Downtown Sparks Victorian Ave","city":"Sparks","county":"Washoe","state":"Nevada","zip":"89431","lat":"39.534773","lon":"-119.754962","vendor_count":5}}}'
+  recorded_at: Thu, 14 Dec 2023 21:55:19 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v0/markets/322482/vendors
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.12
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"6e7a185220da9d320752d2aab4bd3abf"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - aac6cf2b-d490-4142-a4c5-9f22aad34201
+      X-Runtime:
+      - '0.005970'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.04, sql.active_record;dur=0.87, instantiation.active_record;dur=0.05,
+        process_action.action_controller;dur=1.67
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"55340","type":"vendor","attributes":{"name":"Saddle
+        Up Smoothies","description":"smoothie and juice vendor","contact_name":"Trang
+        Kling II","contact_phone":"1-866-326-0903","credit_accepted":false}},{"id":"56282","type":"vendor","attributes":{"name":"Bookish
+        Bazaar","description":"A vibrant and colorful stall offering a diverse selection
+        of books from around the world, as well as handmade bookmarks and reading
+        accessories.","contact_name":"Kanesha Rippin","contact_phone":"1-223-658-3770","credit_accepted":true}},{"id":"54988","type":"vendor","attributes":{"name":"The
+        Freshly Squeezed Company","description":"This vendor offers a variety of freshly
+        squeezed juices.","contact_name":"Miki Gorczany","contact_phone":"227-606-6114","credit_accepted":false}},{"id":"54876","type":"vendor","attributes":{"name":"The
+        Sourdough Queen","description":"This vendor bakes a variety of artisanal breads
+        using sourdough starter, from crusty baguettes to hearty whole wheat loaves.","contact_name":"Kasi
+        Greenholt","contact_phone":"(172) 129-4294","credit_accepted":true}},{"id":"56162","type":"vendor","attributes":{"name":"Colorful
+        Comforts","description":"Colorful and cozy clothing and accessories.","contact_name":"Farrah
+        Crist","contact_phone":"1-321-896-0792","credit_accepted":false}}]}'
+  recorded_at: Thu, 14 Dec 2023 21:55:19 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v0/vendors/55340
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.12
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"4668ac979417e863e694145168e2007a"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - f843891e-3034-4d3b-ae0d-dbcb3909b9b4
+      X-Runtime:
+      - '0.004906'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.04, sql.active_record;dur=0.34, instantiation.active_record;dur=0.02,
+        process_action.action_controller;dur=0.76
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"55340","type":"vendor","attributes":{"name":"Saddle
+        Up Smoothies","description":"smoothie and juice vendor","contact_name":"Trang
+        Kling II","contact_phone":"1-866-326-0903","credit_accepted":false}}}'
+  recorded_at: Thu, 14 Dec 2023 21:55:19 GMT
+recorded_with: VCR 6.2.0

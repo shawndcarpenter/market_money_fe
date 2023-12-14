@@ -1,0 +1,395 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/api/v0/vendors/56162
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.12
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"e9fbb109873cf04b6760969d2042f5bf"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 5e328814-0e29-4c78-acf5-99d599444c2b
+      X-Runtime:
+      - '0.006383'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.05, sql.active_record;dur=0.41, instantiation.active_record;dur=0.02,
+        process_action.action_controller;dur=0.95
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"56162","type":"vendor","attributes":{"name":"Colorful
+        Comforts","description":"Colorful and cozy clothing and accessories.","contact_name":"Farrah
+        Crist","contact_phone":"1-321-896-0792","credit_accepted":false}}}'
+  recorded_at: Thu, 14 Dec 2023 21:54:30 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v0/vendors/56162
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.12
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"e9fbb109873cf04b6760969d2042f5bf"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - c1cbce29-4790-425d-9e5d-685e92ee0596
+      X-Runtime:
+      - '0.005456'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.04, sql.active_record;dur=0.47, instantiation.active_record;dur=0.02,
+        process_action.action_controller;dur=1.24
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"56162","type":"vendor","attributes":{"name":"Colorful
+        Comforts","description":"Colorful and cozy clothing and accessories.","contact_name":"Farrah
+        Crist","contact_phone":"1-321-896-0792","credit_accepted":false}}}'
+  recorded_at: Thu, 14 Dec 2023 21:54:30 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v0/markets/search?city=&name=Cloudcroft&state=New%20Mexico
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.12
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"f282d8d9d10f1c24c6108c84375ec0f7"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - a33f12a7-b92b-45cf-a9f0-46412665297e
+      X-Runtime:
+      - '0.014956'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.04, sql.active_record;dur=6.93, instantiation.active_record;dur=1.71,
+        process_action.action_controller;dur=10.55
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"323892","type":"market","attributes":{"name":"Cloudcroft
+        Farmers Market","street":"Ice Skating Rink off Hwy 82","city":"Cloudcroft","county":"Otero","state":"New
+        Mexico","zip":"88317","lat":"32.957356","lon":"-105.740595","vendor_count":12}}]}'
+  recorded_at: Thu, 14 Dec 2023 21:54:30 GMT
+- request:
+    method: post
+    uri: http://localhost:3000/api/v0/market_vendors
+    body:
+      encoding: UTF-8
+      string: '{"market_id":"323892","vendor_id":"56162"}'
+    headers:
+      User-Agent:
+      - Faraday v2.7.12
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 422
+      message: Unprocessable Entity
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - b95343ce-1c87-4612-af95-e299815ee6e4
+      X-Runtime:
+      - '0.006166'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.05, sql.active_record;dur=0.55, instantiation.active_record;dur=0.03,
+        process_action.action_controller;dur=1.05
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"detail":"Validation failed: Market vendor asociation between
+        market with market_id=323892 and vendor_id=56162 already exists"}]}'
+  recorded_at: Thu, 14 Dec 2023 21:54:30 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v0/vendors/56162
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.12
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"e9fbb109873cf04b6760969d2042f5bf"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 9f792bee-518c-4e2f-becf-6fd65855105c
+      X-Runtime:
+      - '0.005292'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.04, sql.active_record;dur=0.30, instantiation.active_record;dur=0.02,
+        process_action.action_controller;dur=0.77
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"56162","type":"vendor","attributes":{"name":"Colorful
+        Comforts","description":"Colorful and cozy clothing and accessories.","contact_name":"Farrah
+        Crist","contact_phone":"1-321-896-0792","credit_accepted":false}}}'
+  recorded_at: Thu, 14 Dec 2023 21:54:30 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v0/markets/323892
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.12
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"4fb96a030a6d2f84fc36cc50a0f4e59d"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 36176c4f-a01e-4e74-870c-adbddab0b0a3
+      X-Runtime:
+      - '0.019020'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.04, sql.active_record;dur=13.88,
+        instantiation.active_record;dur=0.06, process_action.action_controller;dur=14.72
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"323892","type":"market","attributes":{"name":"Cloudcroft
+        Farmers Market","street":"Ice Skating Rink off Hwy 82","city":"Cloudcroft","county":"Otero","state":"New
+        Mexico","zip":"88317","lat":"32.957356","lon":"-105.740595","vendor_count":12}}}'
+  recorded_at: Thu, 14 Dec 2023 21:54:30 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v0/markets/323892/vendors
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.12
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"c280880b305bd63524d69e31e3887684"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - f6104563-cfbd-4581-9568-cf7d2b3c5ebb
+      X-Runtime:
+      - '0.007342'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.04, sql.active_record;dur=2.20, instantiation.active_record;dur=0.04,
+        process_action.action_controller;dur=3.26
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"55193","type":"vendor","attributes":{"name":"Lobster
+        Lovers","description":"Fresh lobster caught off the coast of Maine","contact_name":"Gerda
+        Kub","contact_phone":"1-341-058-6281","credit_accepted":false}},{"id":"55882","type":"vendor","attributes":{"name":"Unique
+        Unicorns","description":"Handmade unicorn-themed items, including toys and
+        accessories.","contact_name":"Roxy Reinger","contact_phone":"313.364.9757","credit_accepted":true}},{"id":"55542","type":"vendor","attributes":{"name":"Living
+        Lightly","description":"Sustainable home organization and storage solutions","contact_name":"Jacquline
+        Osinski","contact_phone":"423.969.3946","credit_accepted":false}},{"id":"55682","type":"vendor","attributes":{"name":"The
+        Kombucha Collective","description":"Small-batch, artisanal kombucha with unique
+        flavor blends.","contact_name":"Mario Dibbert","contact_phone":"(280) 139-4690","credit_accepted":false}},{"id":"55580","type":"vendor","attributes":{"name":"Fido''s
+        Fashion","description":"Trendy dog apparel and accessories","contact_name":"Ms.
+        Neoma Gottlieb","contact_phone":"1-928-918-5310","credit_accepted":true}},{"id":"56469","type":"vendor","attributes":{"name":"Masterpiece
+        Makers","description":"Paint-by-number kits for all ages","contact_name":"Judson
+        Nader","contact_phone":"1-492-903-4037","credit_accepted":false}},{"id":"55124","type":"vendor","attributes":{"name":"The
+        Radish Ranch","description":"fresh radishes and radish-based dishes","contact_name":"Rev.
+        Marcelo Torp","contact_phone":"1-705-490-4677","credit_accepted":true}},{"id":"55418","type":"vendor","attributes":{"name":"Sip
+        Sip Hooray","description":"Artisanal sodas and beverages","contact_name":"Fr.
+        Brice Conn","contact_phone":"112-999-9811","credit_accepted":false}},{"id":"55863","type":"vendor","attributes":{"name":"Sew
+        Unique","description":"Handmade clothing, including dresses, skirts, and tops.","contact_name":"Tynisha
+        Wolff","contact_phone":"(992) 117-5828","credit_accepted":false}},{"id":"55823","type":"vendor","attributes":{"name":"The
+        Charcuterie Corner","description":"Vendor selling a variety of artisanal cured
+        meats and sausages.","contact_name":"Claudie Langworth III","contact_phone":"1-147-179-9747","credit_accepted":false}},{"id":"56162","type":"vendor","attributes":{"name":"Colorful
+        Comforts","description":"Colorful and cozy clothing and accessories.","contact_name":"Farrah
+        Crist","contact_phone":"1-321-896-0792","credit_accepted":false}},{"id":"55297","type":"vendor","attributes":{"name":"Orange
+        County Olive Oil","description":"Handcrafted olive oil made from locally grown
+        olives","contact_name":"Syble Hamill","contact_phone":"1-276-593-3530","credit_accepted":false}}]}'
+  recorded_at: Thu, 14 Dec 2023 21:54:30 GMT
+recorded_with: VCR 6.2.0

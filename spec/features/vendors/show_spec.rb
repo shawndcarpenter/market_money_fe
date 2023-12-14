@@ -2,7 +2,7 @@ require "rails_helper"
 
 RSpec.describe "Vendor" do
   describe "User Story 3" do
-    it "has the vendors information" do
+    it "has the vendors information", :vcr do
       visit "/vendors/56162"
 
       expect(page).to have_content("Colorful Comforts")
@@ -15,7 +15,7 @@ RSpec.describe "Vendor" do
   end
 
   describe "User Story 4 and 5" do
-    it "can search for markets" do
+    it "can search for markets", :vcr do
       visit "/vendors/56162"
 
       expect(page).to have_content("Search for Markets to add this vendor:")
@@ -33,7 +33,7 @@ RSpec.describe "Vendor" do
       # expect(page).to have_content("Search Results Information - CHECK WIREFRAMES")
     end
 
-    it "can add market vendor" do
+    it "can add market vendor", :vcr do
       visit "/vendors/56162"
       fill_in :state, with: "New Mexico"
       fill_in :name, with: "Cloudcroft"
@@ -44,7 +44,7 @@ RSpec.describe "Vendor" do
       expect(page).to have_link("Colorful Comforts")
     end
 
-    describe "sad paths" do
+    describe "sad paths", :vcr do
       it "will give an error if incorrect search parameters are used" do 
         visit "/vendors/56162"
         fill_in :city, with: "New Mexico"
@@ -53,7 +53,7 @@ RSpec.describe "Vendor" do
         expect(page).to have_content("Invalid set of parameters. Please provide a valid set of parameters to perform a search with this endpoint.")
       end
 
-      it "will give a message if no markets are found" do 
+      it "will give a message if no markets are found", :vcr do 
         visit "/vendors/56162"
         fill_in :state, with: "Not a State"
         click_button("Search")
