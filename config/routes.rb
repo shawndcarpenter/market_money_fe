@@ -8,4 +8,7 @@ Rails.application.routes.draw do
   get "/markets", to: 'markets#index'
 
   get "/vendors/:id", to: 'vendors#show'
+
+  get "/markets/:id/vendors", to: 'markets#new'
+  post "/markets/:id/vendors", to: 'markets#create'
 end
